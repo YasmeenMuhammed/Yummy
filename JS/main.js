@@ -46,8 +46,14 @@ openBtn.addEventListener('click', () => {
     navList.style.cssText = "position: fixed; left: 0;";
     navBar.style.cssText = "position: fixed; left: 17%;";
     NavList.style.cssText = "transform: translateY(0);";
+     let mq = window.matchMedia("(max-width: 768px)");
 
-})
+    if (mq.matches) {
+        navList.style.cssText = "position: fixed; left: 0; width: 50%;";
+        navBar.style.cssText = "position: fixed; left: 50%;";
+    } 
+});
+
 
 closeBtn.addEventListener('click', () => {
     closeNavBar();
@@ -415,6 +421,8 @@ function displayAreaMeals(arr) {
 // Function to get Ingredients
 
 async function getIngredients() {
+    inputSearch.classList.add('d-none');
+
     closeNavBar();
 
     try {
@@ -565,6 +573,8 @@ function validationInputs(element, msgId) {
 // function to show Contact==>
 
 function showContact() {
+    inputSearch.classList.add('d-none');
+
     closeNavBar();
 
 

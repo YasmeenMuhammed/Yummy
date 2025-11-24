@@ -174,9 +174,9 @@ nav i {
 
 @media screen and (max-width: 600px) {
     .navbar {
-        width: 15%;
+        width: 10%;
         z-index: 999;
-        left: 20%;
+        
 
     }
 

@@ -131,7 +131,7 @@ input {
     top: 0;
     bottom: 0;
     left: -20%;
-    z-index: 99 ;
+    z-index: 99;
     color: #fff;
     width: 17%;
     transition: all 1s;
@@ -150,21 +150,50 @@ nav i {
     transition: all 0.4s;
 }
 
-.contact input::placeholder{
+.contact input::placeholder {
     color: grey !important;
 }
-.contact{
+
+.contact {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contact input{
+
+.contact input {
     color: black !important;
 }
 
 
-#NavList{
-transform: translateY(100%);
-transition: all 0.9s;
+#NavList {
+    transform: translateY(100%);
+    transition: all 0.9s;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        width: 15%;
+        z-index: 999;
+        left: 20%;
+
+    }
+
+    .nav-items {
+        width: 30%;
+        padding: 26px;
+        left: -50%;
+
+    }
+
+    #NavList {
+        font-size: 12px;
+    }
+
+    .nav-footer {
+        font-size: 12px;
+        width: 50%;
+
+    }
 }

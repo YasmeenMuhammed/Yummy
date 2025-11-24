@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/logo.png">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+
+    <div class="loading-screen d-none" id="loading-screen">
+        <span class="loader"></span>
+    </div>
+
+
+
+
+    <nav class="navbar bg-white d-flex flex-column">
+        <div class="nav-logo w-75">
+            <img src="IMG/logo.png" class="w-100" alt="">
+
+        </div>
+        <div class="open-close">
+            <i class="fa-solid fa-xmark text-black fs-1 d-none" id="closeBtn"></i>
+            <i class="fa-solid fa-bars text-black fs-1 " id="openBtn"></i>
+        </div>
+        <div class="nav-footer d-flex flex-column">
+            <i class="fa-solid fa-globe text-black fs-4 mb-1"></i>
+            <i class="fa-solid fa-share-nodes text-black fs-4"></i>
+        </div>
+    </nav>
+
+    <div class="nav-items p-4 d-flex flex-column justify-content-between">
+
+        <ul class="list-unstyled" id="NavList">
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#" onclick="searchMeals();">Search</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#" onclick="getCategories();">Categories</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#" onclick="getArea()">Area</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#" onclick="getIngredients()">Ingredients</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#" onclick="showContact()">Contact Us</a>
+            </li>
+
+
+        </ul>
+        <div class="nav-footer ">
+            <div class="footer-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <p>
+                Copyright Â© 2019 All Rights
+                Reserved.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Search -->
+    <div class="container w-75 mt-3 mb-5 d-none" id="inputSearch">
+        <div class="inputss d-flex">
+            <div class="mb-3 w-50 me-2">
+                <input type="search" class="form-control bg-transparent" id="exampleFormControlInput1"
+                    placeholder="Search By Name" oninput="searchMeals(this.value);">
+            </div>
+            <div class="mb-3 w-50">
+                <input type="search" class="form-control bg-transparent" id="exampleFormControlInput1" maxlength="1"
+                    placeholder="Search By First Letter" oninput=" searchByLetter(this.value) ">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- outside Container -->
+    <div id="home my-3">
+        <div class="container my-3">
+            <div class="row g-4" id="rowData">
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/main.js"></script>
+</body>
+
+</html>
